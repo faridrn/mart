@@ -1,0 +1,25 @@
+Text Color: #333
+
+Lightrt Gray (inputs or tabs border): #b5b5b5
+Light Gray (menu separators or common borders): #ccc
+Mid Gray (placeholders): b5b5b5
+Dark Gray: #717171
+Darker Gray (Icons): #565656
+
+Dark Green:	#439539
+Normal Green: #5ba71b
+Light Green: #86b817
+
+Red: #e53238
+
+Orange: #f5af02
+
+Blue: #0079bc
+Dark Blue (links, active text, etc.): #3754c4
+Darker Blue (shadows, button bevels): #00509d
+
+Boxes {
+	box-shadow: 0 2px 2px 1px #CCCCCC;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
