@@ -15,6 +15,21 @@ Meanwhile I'm gonna update the documentation and guids here.
  * [Fontello](http://fontello.com)
 
 ## Configurations ##
+### Bootstrap Customizations ###
+Following Components are disabled to minify assets:
+ * Thumbnails
+ * Hero unit
+ * Media Component
+ * Wells
+ * Icons (icons are replaced with fontello ones)
+Following customizations has been done varibales:
+ * @baseFontSize: 12px
+ * @baseLineHeight: 16px
+ * @baseBorderRadius: 3px
+ * @borderRadiusLarge: 5px
+ * @borderRadiusSmall: 2px
+Colors has changed to following items. (Bootstrap ones are marked with an starat the end)
+Other colors are bootstrap defaults.
 ### Colors ###
  * Text Color: #333
 
@@ -27,18 +42,18 @@ Meanwhile I'm gonna update the documentation and guids here.
 
 **Green**<br />
  * Dark Green:	#439539
-* Normal Green: #5ba71b
-* Light Green: #86b817
+ * Normal Green: #5ba71b *
+ * Light Green: #86b817
 
 **Red**<br />
-* Red: #e53238
+* Red: #e53238 *
 
 **Orange**<br />
-* Orange: #f5af02
+* Orange: #f5af02 *
 
 **Blue**<br />
-* Blue: #0079bc
-* Dark Blue (links, active text, etc.): #3754c4
+* Blue: #0079bc *
+* Dark Blue (links, active text, etc.): #3754c4 *
 * Darker Blue (shadows, button bevels): #00509d
 
 ### Boxes ###
