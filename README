@@ -1,25 +1,50 @@
-Text Color: #333
+# Mart HTML5 Template #
 
-Lightrt Gray (inputs or tabs border): #b5b5b5
-Light Gray (menu separators or common borders): #ccc
-Mid Gray (placeholders): b5b5b5
-Dark Gray: #717171
-Darker Gray (Icons): #565656
+<br />
+## Introduction ##
+This template is currently under development at first stage so it's not gonna be usable for now.<br />
+Meanwhile I'm gonna update the documentation and guids here.
 
-Dark Green:	#439539
-Normal Green: #5ba71b
-Light Green: #86b817
+## Features ##
+ * Fully HTML5 template
 
-Red: #e53238
+## Technologies Used ##
+ * CSS3 (with CSS2 compatibility for older browsers)
+ * [jQuery 1.9.1](http://code.jquery.com/jquery-1.9.1.min.js) (for browser-compatibility)
+ * [Bootstrap](http://twitter.github.io/bootstrap/) 2.3.1 (with customization)
+ * [Fontello](http://fontello.com)
 
-Orange: #f5af02
+## Configurations ##
+### Colors ###
+ * Text Color: #333
 
-Blue: #0079bc
-Dark Blue (links, active text, etc.): #3754c4
-Darker Blue (shadows, button bevels): #00509d
+**Gray**<br />
+ * Lightrt Gray (inputs or tabs border): #b5b5b5
+ * Light Gray (menu separators or common borders): #ccc
+ * Mid Gray (placeholders): b5b5b5
+ * Dark Gray: #717171
+ * Darker Gray (Icons): #565656
 
-Boxes {
-	box-shadow: 0 2px 2px 1px #CCCCCC;
-	border: 1px solid #fff;
-	border-radius: 3px;
-}
+**Green**<br />
+ * Dark Green:	#439539
+* Normal Green: #5ba71b
+* Light Green: #86b817
+
+**Red**<br />
+* Red: #e53238
+
+**Orange**<br />
+* Orange: #f5af02
+
+**Blue**<br />
+* Blue: #0079bc
+* Dark Blue (links, active text, etc.): #3754c4
+* Darker Blue (shadows, button bevels): #00509d
+
+### Boxes ###
+ * box-shadow: 0 2px 2px 1px #CCCCCC;
+ * border: 1px solid #fff;
+ * border-radius: 3px;
+
+## License ##
+Code licensed under [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0), documentation under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) and is completely free to use and modification WITHOUT WARRANTIES OF ANY KIND.
