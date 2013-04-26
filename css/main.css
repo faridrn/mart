@@ -1,5 +1,9 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
 ::selection { background: #b3d4fc; text-shadow: none; }
+body { font-family: Tahoma, Times, Arial, serif }
+input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .container { direction: rtl; text-align: right; }
 /* ==========================================================================
    Print styles
@@ -19,21 +23,21 @@
 }
 /* Hedaer */
 /** Brand **/
-.navbar .brand { float: right; margin-left: 0; margin-right: -20px; }
+.navbar .brand { float: right; margin: 10px 0 0 0; display: block; background: black; height: 41px; padding: 0; }
 /** Search **/
-#search { margin: 0; padding: 10px 0; flaot: none; display: inline; }
-#search form { margin: 0; padding: 10px 0; flaot: right; }
+#search { margin: 0; padding: 5px 0; flaot: none; display: inline; }
+#search form { margin: 0; padding: 5px 0; flaot: right; }
 #search form input, #search form select { margin-bottom: 0; padding-top: 10px; padding-bottom: 9px; }
 #search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; flaot: right; }
 #search .select2-container { height: 41px; margin-right: -3px;  }
 #search .select2-container.search-selectbox { width: 200px; }
-#search .select2-container .select2-choice { height: 39px; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-color: #ccc; }
+#search .select2-container .select2-choice { height: 39px; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-color: #ccc; font-family: 'Droid Arabic Naskh' }
 #search .select2-container .select2-choice span { margin-right: 0; margin-left: 30px; padding: 7px 7px 0 0; }
 #search .select2-container .select2-choice div { border-left: 0 none; border-right: 1px solid #ccc; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; left: 0; right: auto; width: 20px; }
 #search .select2-container .select2-choice div b { background-position: 2px 5px; }
+#search .btn { margin-top: 0; height: 41px; font-family: 'Droid Arabic Naskh', 'Droid Arabic Kufi'; font-weight: bold; }
 .select2-search input { direction: rtl; text-align: right; }
 .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { direction: rtl; text-align: right; }
 .select2-results li { direction: rtl; text-align: right; }
-/*#search #searchcategories {  border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; margin-left: -3px; height: 41px; }
-	#search #searchcategories option {  height: 41px; zoom: 1.7; }*/
-#search .btn { margin-top: 0; height: 41px; }
+/** User Area **/
+#userarea { margin: 10px 0; }

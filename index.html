@@ -19,23 +19,37 @@
 				<div class="navbar-inner">
 					<div class="container">
 						<div class="row">
+							<a class="brand span2" href="/">&nbsp;</a>
 							<div id="userarea" class="span3">
-								
+								<div class="greetings">
+									<i class="icon-user"></i>
+									<span class="message">سلام</span>&nbsp;
+									<span class="username">فرید</span>&nbsp;
+									<a href="#" id="logout-link">
+										<span>خروج</span>
+									</a>
+								</div>
+								<div class="cart-info">
+									<a href="#" rel="cart-modal" id="cart-link">
+										<i class="icon-cart"></i>
+										<span class="message">سبد خرید (خالی)</span>
+									</a>
+								</div>
 							</div>
 							<div id="search" class="span7">
 								<form action="/search" method="get">
 									<fieldset>
-										<input type="text" value="" id="searchword" name="searchword" class="span4" placeholder="Search..." />
+										<input type="text" value="" id="searchword" name="searchword" class="span4" placeholder="جستجو..." />
 										<select name="categories" id="searchcategories">
-											<option value="option1">Option 1</option>
+											<option value="option1">همه بخش ها</option>
 											<option value="option2">Option 2</option>
 											<option value="option3">Option 3</option>
 										</select>
-										<input type="button" value="Search" class="btn btn-primary" />
+										<input type="button" value="جستجو" class="btn btn-info" />
 									</fieldset>
 								</form>
 							</div>
-							<a class="brand span2" href="/">a</a>
+							
 						</div>
 					</div>
 				</div>
@@ -44,11 +58,11 @@
 		<section id="mainbody">
 			<div class="container">
 				<div class="row">
-					<div class="span4">
-						navigation Menu
-					</div>
 					<div class="span8">
 						mainbody
+					</div>
+					<div class="span4">
+						navigation Menu
 					</div>
 				</div>
 			</div>
