@@ -29,12 +29,12 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .navbar .brand { float: right; margin: 11px 0 0 0; padding: 0; overflow: hidden; height: 41px; width: 140px; position: relative; }
 .navbar .brand a { display: block; background: darkGray; height: 41px; width: 140px; padding: 0; position: absolute; left: 0; top: 0; }
 /** Search **/
-#search { margin: 0; padding: 5px 0; flaot: none; display: inline; }
+#search { margin: 0; padding: 5px 0; flaot: none; display: inline; width: 580px; }
 #search form { margin: 0; padding: 5px 0; flaot: right; }
 #search form input, #search form select { margin-bottom: 0; padding-top: 10px; padding-bottom: 9px; }
-#search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; flaot: right; }
+#search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; flaot: right; width: 220px; }
 #search .select2-container { height: 41px; margin-right: -4px;  }
-#search .select2-container.search-selectbox { width: 150px; }
+#search .select2-container.search-selectbox { width: 120px; }
 #search .select2-container .select2-choice { height: 39px; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-color: #ccc; font-family: 'Droid Arabic Naskh' }
 #search .select2-container .select2-choice span { margin-right: 0; margin-left: 30px; padding: 7px 7px 0 0; }
 #search .select2-container .select2-choice div { border-left: 0 none; border-right: 1px solid #ccc; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; left: 0; right: auto; width: 20px; }
@@ -75,7 +75,9 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .sub-items .item-cols .other-categories { width: 160px; }
 
 @media (min-width: 1200px) { /* WideScreens */
-	
+	#search { width: 620px; }
+	#search #searchword { width: 286px; }
+	#search .select2-container.search-selectbox { width: 150px; }
 }
 
 
