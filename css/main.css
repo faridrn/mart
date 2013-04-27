@@ -1,38 +1,20 @@
-
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
-
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
 ::selection { background: #b3d4fc; text-shadow: none; }
 body { font-family: Tahoma, Times, Arial, serif }
 input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .container { direction: rtl; text-align: right; }
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-	* { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
-	a, a:visited { text-decoration: underline; }
-	a[href]:after { content: " (" attr(href) ")"; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-	tr, img { page-break-inside: avoid; }
-	img { max-width: 100% !important; }
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans: 3; widows: 3; }
-	h2, h3 { page-break-after: avoid; }
-}
-/* Hedaer */
+.collapse { height: auto; }
 .navbar-inner { background-image: none; filter: none; }
 /** Brand **/
 .navbar .brand { float: right; margin: 11px 0 0 0; padding: 0; overflow: hidden; height: 41px; width: 140px; position: relative; }
 .navbar .brand a { display: block; background: darkGray; height: 41px; width: 140px; padding: 0; position: absolute; left: 0; top: 0; }
 /** Search **/
-#search { margin: 0; padding: 5px 0; flaot: none; display: inline; width: 580px; }
+#search { margin: 0; padding: 5px 0; /*float: none;*/ display: inline; width: 580px; }
 #search form { margin: 0; padding: 5px 0; flaot: right; }
 #search form input, #search form select { margin-bottom: 0; padding-top: 10px; padding-bottom: 9px; }
-#search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; flaot: right; width: 220px; }
+#search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; width: 220px; }
 #search .select2-container { height: 41px; margin-right: -4px;  }
 #search .select2-container.search-selectbox { width: 120px; }
 #search .select2-container .select2-choice { height: 39px; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-color: #ccc; font-family: 'Droid Arabic Naskh' }
@@ -73,11 +55,29 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .sub-items .item-cols .top-categories h4 { font-family: 'Droid Arabic Naskh', 'Times New Roman', Times, Arial, Tahoma; font-weight: normal; font-size: 14px; line-height: 20px; }
 .sub-items .item-cols .top-categories h4 span { display: inline-block; width: 20px; height: 20px; background: black; float: right; margin-left: 5px; }
 .sub-items .item-cols .other-categories { width: 160px; }
-
+/* Responsive Rules */
 @media (min-width: 1200px) { /* WideScreens */
-	#search { width: 620px; }
-	#search #searchword { width: 286px; }
+	#search { width: 770px; }
+	#search #searchword { width: 355px; }
 	#search .select2-container.search-selectbox { width: 150px; }
+	.sidenav { width: 270px; }
+}
+@media (min-width:768px) and (max-width:979px) { /* Narrow to desktops */
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 0 5px; }
+	.navbar-fixed-top, .navbar-fixed-bottom { position: fixed; }
+	.navbar .btn-navbar { display: none; }
+	#search { width: 465px; }
+	#search #advanced-search { display: none; }
+	.sidenav { width: 166px; }
+}
+@media (max-width: 767px) { /* Small Tablets and PDAs */.
+	#search { float: none; clear: both; }
+	#search #searchword { display: inline }
+	#search #advanced-search { display: none; }
+	.search-collapse { display: block; clear: both; width: 100%; }
+	#userarea { width: 30%; float: left; }
+	.collapse { height: 0 }
+	.sidenav { width: 100%; position: static }
 }
 
 
@@ -87,5 +87,16 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 
 
 
-
-
+@media print {
+	* { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
+	a, a:visited { text-decoration: underline; }
+	a[href]:after { content: " (" attr(href) ")"; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	tr, img { page-break-inside: avoid; }
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3 { page-break-after: avoid; }
+}

@@ -24,6 +24,9 @@
 					<div class="container">
 						<div class="row">
 							<h1 class="brand span2 pull-left"><a href="/">&nbsp;</a></h1>
+							<button type="button" class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".search-collapse">
+					            <i class="icon-search"></i>
+					        </button>
 							<div id="userarea" class="span3">
 								<div class="userarea-inner">
 									<div class="greetings">
@@ -35,26 +38,28 @@
 									</div>
 								</div>
 							</div>
-							<div id="search" class="span8">
-								<form action="/search" method="get">
-									<fieldset>
-										<input type="text" value="" id="searchword" name="searchword" class="span4" placeholder="جستجو..." />
-										<select name="categories" id="searchcategories">
-											<option value="option1">همه بخش ها</option>
-											<option value="option2">Option 2</option>
-											<option value="option3">Option 3</option>
-										</select>
-										<button id="search-button" class="btn btn-info">
-											<i class="icon-search"></i>&nbsp;
-											جستجو
-										</button>
-										<div id="advanced-search">
-											<a href="#advanced-search">جستجوی پیشرفته</a>
-										</div>
-									</fieldset>
-								</form>
+							<div class="search-collapse collapse">
+								<div class="clear-header"></div>
+								<div id="search" class="span8">
+									<form action="/search" method="get">
+										<fieldset>
+											<input type="text" value="" id="searchword" name="searchword" class="span4" placeholder="جستجو..." />
+											<select name="categories" id="searchcategories">
+												<option value="option1">همه بخش ها</option>
+												<option value="option2">Option 2</option>
+												<option value="option3">Option 3</option>
+											</select>
+											<button id="search-button" class="btn btn-info">
+												<i class="icon-search"></i>&nbsp;
+												جستجو
+											</button>
+											<div id="advanced-search">
+												<a href="#advanced-search">جستجوی پیشرفته</a>
+											</div>
+										</fieldset>
+									</form>
+								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>

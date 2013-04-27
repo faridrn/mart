@@ -4,7 +4,7 @@ $(function() {
 		containerCssClass: 'search-selectbox'
 	});
 
-
+	// alert($('body').width());
 	
 	$(".nav-list").delegate('li', 'mouseover', function(e) {
 		$(this).find("a").addClass('active');
