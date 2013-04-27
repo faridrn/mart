@@ -1,5 +1,7 @@
+
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
 ::selection { background: #b3d4fc; text-shadow: none; }
 body { font-family: Tahoma, Times, Arial, serif }
@@ -22,22 +24,66 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 	h2, h3 { page-break-after: avoid; }
 }
 /* Hedaer */
+.navbar-inner { background-image: none; filter: none; }
 /** Brand **/
-.navbar .brand { float: right; margin: 10px 0 0 0; display: block; background: black; height: 41px; padding: 0; }
+.navbar .brand { float: right; margin: 11px 0 0 0; padding: 0; overflow: hidden; height: 41px; width: 140px; position: relative; }
+.navbar .brand a { display: block; background: darkGray; height: 41px; width: 140px; padding: 0; position: absolute; left: 0; top: 0; }
 /** Search **/
 #search { margin: 0; padding: 5px 0; flaot: none; display: inline; }
 #search form { margin: 0; padding: 5px 0; flaot: right; }
 #search form input, #search form select { margin-bottom: 0; padding-top: 10px; padding-bottom: 9px; }
 #search #searchword { border-left: 0 none; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; flaot: right; }
-#search .select2-container { height: 41px; margin-right: -3px;  }
-#search .select2-container.search-selectbox { width: 200px; }
+#search .select2-container { height: 41px; margin-right: -4px;  }
+#search .select2-container.search-selectbox { width: 150px; }
 #search .select2-container .select2-choice { height: 39px; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-color: #ccc; font-family: 'Droid Arabic Naskh' }
 #search .select2-container .select2-choice span { margin-right: 0; margin-left: 30px; padding: 7px 7px 0 0; }
 #search .select2-container .select2-choice div { border-left: 0 none; border-right: 1px solid #ccc; border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; left: 0; right: auto; width: 20px; }
 #search .select2-container .select2-choice div b { background-position: 2px 5px; }
-#search .btn { margin-top: 0; height: 41px; font-family: 'Droid Arabic Naskh', 'Droid Arabic Kufi'; font-weight: bold; }
+#search .btn { margin-top: 0; height: 41px; font-family: 'Droid Arabic Naskh', 'Droid Arabic Kufi'; font-weight: bold; line-height: 31px; }
+#search .btn i { line-height: 21px; }
+#search #advanced-search { display: inline; line-height: 41px; }
+#search #advanced-search a { display: inline-block; margin-right: 5px; color: #888 }
 .select2-search input { direction: rtl; text-align: right; }
 .select2-results .select2-no-results, .select2-results .select2-searching, .select2-results .select2-selection-limit { direction: rtl; text-align: right; }
 .select2-results li { direction: rtl; text-align: right; }
 /** User Area **/
 #userarea { margin: 10px 0; }
+.userarea-inner {  }
+/* Mainbody */
+#mainbody { background: #f8f8f8; min-height: 800px; margin-top: 60px; padding-top: 20px; }
+/** Slideshow **/
+.slideshow { width: 100%; height: 250px; background: #eee; }
+/* Sidebar */
+.sidenav { width: 228px; margin: 20px 0 0; padding: 0; }
+.sidenav > li { position: relative; }
+.sidenav > li > a { display: block; width: 190px \9; margin: 0 0 -1px; padding: 8px 14px; border-bottom: 1px solid #e5e5e5; color: #333; font-family: 'Droid Arabic Naskh'; }
+.sidenav > li > a:hover, .sidenav > li > a.active { background: #fff; }
+.sidenav > li > a .arrow { display: inline-block; float: left; padding-top: 2px; color: #333; *float: none; *text-align: left; margin-left: -5px \9; }
+.sidenav .icon-chevron-right { float: right; margin-top: 2px; margin-right: -6px; opacity: .25 }
+.sidenav li:hover .arrow, .sidenav a:hover .arrow { opacity: .5 }
+.sidenav.affix { top: 60px }
+.sidenav.affix-bottom { position: absolute; top: auto; bottom: 270px }
+
+.sub-items { position: absolute; width: 350px; background: #fff; right: 0; top: 0; z-index: 999; padding: 10px; -webkit-box-shadow: 0 8px 6px -6px #ccc; -moz-box-shadow: 0 8px 6px -6px #ccc; box-shadow: 0 8px 6px -6px #ccc; }
+.sub-items .item-cols {  }
+.sub-items .item-cols h3 { font-family: 'Droid Arabic Kufi', 'Times New Roman', Times, Arial, Tahoma; font-weight: normal; font-size: 16px; line-height: 30px; border-bottom: 1px solid #eee; margin: 0 0 5px }
+.sub-items .item-cols ul { list-style: none; margin: 0; }
+.sub-items .item-cols .top-categories { width: 175px; margin-left: 15px; }
+.sub-items .item-cols .top-categories li {  }
+.sub-items .item-cols .top-categories h4 { font-family: 'Droid Arabic Naskh', 'Times New Roman', Times, Arial, Tahoma; font-weight: normal; font-size: 14px; line-height: 20px; }
+.sub-items .item-cols .top-categories h4 span { display: inline-block; width: 20px; height: 20px; background: black; float: right; margin-left: 5px; }
+.sub-items .item-cols .other-categories { width: 160px; }
+
+@media (min-width: 1200px) { /* WideScreens */
+	
+}
+
+
+
+
+
+
+
+
+
+

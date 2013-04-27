@@ -2,41 +2,40 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Mart HTML5 Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/select2.css">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Mart HTML5 Template</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/mart-icons.css">
+		<link rel="stylesheet" href="css/select2.css">
+		<!--[if IE 7]><link rel="stylesheet" href="css/mart-icons-ie7.css"><![endif]-->
+		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	</head>
+	<body>
 		<header id="header">
 			<div class="navbar navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
 						<div class="row">
-							<a class="brand span2" href="/">&nbsp;</a>
+							<h1 class="brand span2 pull-left"><a href="/">&nbsp;</a></h1>
 							<div id="userarea" class="span3">
-								<div class="greetings">
-									<i class="icon-user"></i>
-									<span class="message">سلام</span>&nbsp;
-									<span class="username">فرید</span>&nbsp;
-									<a href="#" id="logout-link">
-										<span>خروج</span>
-									</a>
-								</div>
-								<div class="cart-info">
-									<a href="#" rel="cart-modal" id="cart-link">
-										<i class="icon-cart"></i>
-										<span class="message">سبد خرید (خالی)</span>
-									</a>
+								<div class="userarea-inner">
+									<div class="greetings">
+										<i class="icon-user"></i>
+										<span class="message">سلام</span>&nbsp;<span class="username">فرید</span>&nbsp;<a href="#" id="logout-link"><span>خروج</span></a>
+									</div>
+									<div class="cart-info">
+										<a href="#" rel="cart-modal" id="cart-link"> <i class="icon-cart"></i> <span class="message">سبد خرید (خالی)</span> </a>
+									</div>
 								</div>
 							</div>
-							<div id="search" class="span7">
+							<div id="search" class="span8">
 								<form action="/search" method="get">
 									<fieldset>
 										<input type="text" value="" id="searchword" name="searchword" class="span4" placeholder="جستجو..." />
@@ -45,11 +44,17 @@
 											<option value="option2">Option 2</option>
 											<option value="option3">Option 3</option>
 										</select>
-										<input type="button" value="جستجو" class="btn btn-info" />
+										<button id="search-button" class="btn btn-info">
+											<i class="icon-search"></i>&nbsp;
+											جستجو
+										</button>
+										<div id="advanced-search">
+											<a href="#advanced-search">جستجوی پیشرفته</a>
+										</div>
 									</fieldset>
 								</form>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
@@ -58,21 +63,74 @@
 		<section id="mainbody">
 			<div class="container">
 				<div class="row">
-					<div class="span8">
-						mainbody
+					<div class="span9">
+						<div id="showcase">
+							<div class="slideshow"></div>
+						</div>
 					</div>
-					<div class="span4">
-						navigation Menu
+					<div class="span3" id="sidebar">
+						<ul class="nav nav-list sidenav affix">
+							<li>
+								<a href="#">اتومبیل<i class="arrow icon-left-open"></i></a>
+								<div class="sub-items hide">
+									<div class="item-cols">
+										<div class="pull-right top-categories">
+											<header>
+												<h3>بخش های اصلی</h3>
+											</header>
+											<ul>
+												<li>
+													<h4><a href="#"><span></span>خودروهای خارجی</a></h4>
+												</li>
+												<li>
+													<h4><a href="#"><span></span>خودروهای داخلی</a></h4>
+												</li>
+												<li>
+													<h4><a href="#"><span></span>خودروهای خارجی</a></h4>
+												</li>
+											</ul>
+										</div>
+										<div class="pull-right other-categories">
+											<header>
+												<h3>سایر بخش ها</h3>
+											</header>
+											<ul>
+												<li>
+													<a href="#">خودروهای سنگین</a>
+												</li>
+												<li>
+													<a href="#">خودروهای سبک</a>
+												</li>
+												<li>
+													<a href="#">خودروهای سنگین</a>
+												</li>
+												<li>
+													<a href="#">خودروهای سبک</a>
+												</li>
+											</ul>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#">البسه<i class="arrow icon-left-open"></i></a>
+
+							</li>
+							<li>
+								<a href="#">لوازم الکترونیکی<i class="arrow icon-left-open"></i></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		<footer id="footer">
-			
+
 		</footer>
-        <script src="js/vendor/jquery-1.9.1.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/select2.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/select2.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
