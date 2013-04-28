@@ -27,6 +27,10 @@
 							<button type="button" class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".search-collapse">
 					            <i class="icon-search"></i>
 					        </button>
+					        <a href="#" id="cart-toggle" class="btn btn-navbar" style="display: none;">
+					        	<i class="icon-cart"></i>
+					        	<i class="badge badge-info">6</i>
+					        </a>
 							<div id="userarea" class="span3">
 								<div class="userarea-inner">
 									<div class="greetings">
@@ -34,7 +38,7 @@
 										<span class="message">سلام</span>&nbsp;<span class="username">فرید</span>&nbsp;<a href="#" id="logout-link"><span>خروج</span></a>
 									</div>
 									<div class="cart-info">
-										<a href="#" rel="cart-modal" id="cart-link"> <i class="icon-cart"></i> <span class="message">سبد خرید (خالی)</span> </a>
+										<a href="#" rel="cart-modal" id="cart-link"><i class="icon-cart"></i><span class="message">سبد خرید (خالی)</span></a>
 									</div>
 								</div>
 							</div>
@@ -68,16 +72,11 @@
 		<section id="mainbody">
 			<div class="container">
 				<div class="row">
-					<div class="span9">
-						<div id="showcase">
-							<div class="slideshow"></div>
-						</div>
-					</div>
 					<div class="span3" id="sidebar">
 						<ul class="nav nav-list sidenav affix">
 							<li>
 								<a href="#">اتومبیل<i class="arrow icon-left-open"></i></a>
-								<div class="sub-items hide">
+								<div class="sub-items">
 									<div class="item-cols">
 										<div class="pull-right top-categories">
 											<header>
@@ -120,12 +119,16 @@
 							</li>
 							<li>
 								<a href="#">البسه<i class="arrow icon-left-open"></i></a>
-
 							</li>
 							<li>
 								<a href="#">لوازم الکترونیکی<i class="arrow icon-left-open"></i></a>
 							</li>
 						</ul>
+					</div>
+					<div class="span9">
+						<div id="showcase">
+							<div class="slideshow"></div>
+						</div>
 					</div>
 				</div>
 			</div>

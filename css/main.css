@@ -9,7 +9,7 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .navbar-inner { background-image: none; filter: none; }
 /** Brand **/
 .navbar .brand { float: right; margin: 11px 0 0 0; padding: 0; overflow: hidden; height: 41px; width: 140px; position: relative; }
-.navbar .brand a { display: block; background: darkGray; height: 41px; width: 140px; padding: 0; position: absolute; left: 0; top: 0; }
+.navbar .brand a { display: block; background: darkGray; height: 41px; width: 140px; padding: 0; position: absolute; left: 0; top: 0; text-decoration: none; }
 /** Search **/
 #search { margin: 0; padding: 5px 0; /*float: none;*/ display: inline; width: 580px; }
 #search form { margin: 0; padding: 5px 0; flaot: right; }
@@ -33,6 +33,7 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .userarea-inner {  }
 /* Mainbody */
 #mainbody { background: #f8f8f8; min-height: 800px; margin-top: 60px; padding-top: 20px; }
+#mainbody [class*="span"] { float: right; }
 /** Slideshow **/
 .slideshow { width: 100%; height: 250px; background: #eee; }
 /* Sidebar */
@@ -45,7 +46,9 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .sidenav li:hover .arrow, .sidenav a:hover .arrow { opacity: .5 }
 .sidenav.affix { top: 60px }
 .sidenav.affix-bottom { position: absolute; top: auto; bottom: 270px }
-
+/** Sub Items **/
+.sidenav > li .sub-items { display: none; right: 200px; }
+.sidenav > li:hover > .sub-items { display: block; }
 .sub-items { position: absolute; width: 350px; background: #fff; right: 0; top: 0; z-index: 999; padding: 10px; -webkit-box-shadow: 0 8px 6px -6px #ccc; -moz-box-shadow: 0 8px 6px -6px #ccc; box-shadow: 0 8px 6px -6px #ccc; }
 .sub-items .item-cols {  }
 .sub-items .item-cols h3 { font-family: 'Droid Arabic Kufi', 'Times New Roman', Times, Arial, Tahoma; font-weight: normal; font-size: 16px; line-height: 30px; border-bottom: 1px solid #eee; margin: 0 0 5px }
@@ -61,6 +64,7 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 	#search #searchword { width: 355px; }
 	#search .select2-container.search-selectbox { width: 150px; }
 	.sidenav { width: 270px; }
+	.sidenav > li .sub-items { right: 240px; }
 }
 @media (min-width:768px) and (max-width:979px) { /* Narrow to desktops */
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 0 5px; }
@@ -69,15 +73,28 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 	#search { width: 465px; }
 	#search #advanced-search { display: none; }
 	.sidenav { width: 166px; }
+	.sidenav > li .sub-items { right: 140px; }
 }
-@media (max-width: 767px) { /* Small Tablets and PDAs */.
+@media (max-width: 767px) { /* Small Tablets and PDAs */
+	html, body { background-color: #f8f8f8; }
+	#mainbody { margin-top: 0; padding-top: 0; }
+	#sidebar { margin-bottom: 20px }
+	#userarea { margin: 5px 0; }
+	.navbar .brand { margin-top: 5px; }
+	.navbar .btn-navbar { margin: 5px 10px 0 0; color: #ffffff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #363636; background-image: -moz-linear-gradient(top, #444444, #222222); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222)); background-image: -webkit-linear-gradient(top, #444444, #222222); background-image: -o-linear-gradient(top, #444444, #222222); background-image: linear-gradient(to bottom, #444444, #222222); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0); border-color: #222222 #222222 #000000; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #222222; filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+	.btn-navbar:hover, .btn-navbar:focus, .btn-navbar:active, .btn-navbar.active, .btn-navbar.disabled, .btn-navbar[disabled] { color: #ffffff; background-color: #222222 !important; *background-color: #151515 !important; }
 	#search { float: none; clear: both; }
 	#search #searchword { display: inline }
 	#search #advanced-search { display: none; }
 	.search-collapse { display: block; clear: both; width: 100%; }
+	#cart-toggle { display: block !important; }
+	.cart-info { display: none; }
+	#logout-link { display: block }
 	#userarea { width: 30%; float: left; }
 	.collapse { height: 0 }
-	.sidenav { width: 100%; position: static }
+	.sidenav { width: 100%; position: static; margin: 0; }
+	.sidenav > li .sub-items { width: inherit; position: static }
+	.sidenav > li:hover > .sub-items { display: none; }
 }
 
 
