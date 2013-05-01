@@ -48,7 +48,7 @@ input, button, textarea { font-family: Tahoma, Times, Arial, serif }
 .sidenav.affix-bottom { position: absolute; top: auto; bottom: 270px }
 /** Sub Items **/
 .sidenav > li .sub-items { display: none; right: 200px; }
-.sidenav > li:hover > .sub-items { display: block; }
+/*.sidenav > li:hover > .sub-items { display: block; }*/
 .sub-items { position: absolute; width: 350px; background: #fff; right: 0; top: 0; z-index: 999; padding: 10px; -webkit-box-shadow: 0 8px 6px -6px #ccc; -moz-box-shadow: 0 8px 6px -6px #ccc; box-shadow: 0 8px 6px -6px #ccc; }
 .sub-items .item-cols {  }
 .sub-items .item-cols h3 { font-family: 'Droid Arabic Kufi', 'Times New Roman', Times, Arial, Tahoma; font-weight: normal; font-size: 16px; line-height: 30px; border-bottom: 1px solid #eee; margin: 0 0 5px }
