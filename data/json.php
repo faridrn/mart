@@ -12,8 +12,6 @@ $one = array(5, 12);
 $cam = array(6, 13);
 $galaxy = array(7, 14, 15);
 
-
-
 switch ($type) {
 	case 'details':
 		// $item->limage = 'data/images/img1.jpg';
