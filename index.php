@@ -55,35 +55,7 @@
 								</div>
 							</div>
 							<div id="userarea" class="span2">
-								<div class="userarea-inner">
-									<div class="greetings">
-										<i class="icon-user"></i>
-										<!--<span class="message">سلام</span>&nbsp;<span class="username">فرید</span>&nbsp;<a href="#" id="logout-link"><span>خروج</span></a>-->
-										<a href="#" id="login-link" data-toggle="popover" title="ورود به سایت"><span>ورود به سایت</span></a>&nbsp;|&nbsp;
-										<a href="#" id="register-link"><span>کاربر جدید</span></a>
-										<div id="login-popover" class="hide">
-											<form id="login-form" action="" method="post">
-												<fieldset>
-													<input type="text" name="username" placeholder="نام کاربری" />
-													<input type="password" name="password" placeholder="رمز عبور" />
-													<button type="submit" class="btn btn-success">ورود</button>
-													<div class="clearfix"></div>
-												</fieldset>
-												<ul>
-													<li>
-														<a href="#" id="forgot">رمز عبورم را فراموش کرده ام</a>
-													</li>
-													<li>
-														<a href="#" id="forgot">کلمه عبورم را فراموش کرده ام</a>
-													</li>
-												</ul>
-											</form>
-										</div>
-									</div>
-									<div class="cart-info">
-										<a href="#" rel="cart-modal" id="cart-link"><i class="icon-cart"></i><span class="message">سبد خرید (خالی)</span></a>
-									</div>
-								</div>
+								<?php include dirname(__file__) . '/blocks/user.php'; ?>
 							</div>
 						</div>
 					</div>
@@ -130,14 +102,7 @@
 					</div>
 					<div class="span9">
 						<section id="showcase">
-							<div class="slideshow">
-								<ul>
-									<li><img src="data/slides/slide1.jpg" alt="" /></li>
-									<li><img src="data/slides/slide2.jpg" alt="" /></li>
-									<li><img src="data/slides/slide3.jpg" alt="" /></li>
-								</ul>
-								<div class="pagination"></div>
-							</div>
+							<?php include dirname(__file__) . '/blocks/slideshow.php'; ?>
 						</section>
 						<section id="items"></section>
 					</div>
@@ -145,84 +110,7 @@
 			</div>
 		</section>
 		<section id="modals">
-			<div id="items-modal" class="modal hide fade">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3>نام کالا</h3>
-					<div class="clearfix"></div>
-				</div>
-				<div class="modal-body"></div>
-				<div class="modal-footer">
-					<h3>موارد مشابه</h3>
-				</div>
-			</div>
-			<div id="cart-modal" class="modal hide fade">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3>سبد خرید</h3>
-					<div class="clearfix"></div>
-				</div>
-				<div class="modal-body">
-					
-				</div>
-				<div class="modal-footer">
-					<div class="options pull-left">
-						<a href="#" class="btn btn-primary">تایید نهایی و خرید</a>
-					</div>
-				</div>
-			</div>
-			<div id="register-modal" class="modal hide fade">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3>عضویت در سایت</h3>
-					<div class="clearfix"></div>
-				</div>
-				<div class="modal-body">
-					<form id="register-form" action="" method="post" class="form-horizontal">
-						<fieldset>
-							<div class="control-group">
-								<label class="control-label" for="name">نام *</label>
-								<div class="controls">
-									<input type="text" name="name" />
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="name">نام خانوادگی *</label>
-								<div class="controls">
-									<input type="text" name="name" />
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="name">پست الکترونیک *</label>
-								<div class="controls">
-									<input type="email" name="name" />
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="name">نام کاربری *</label>
-								<div class="controls">
-									<input type="text" name="name" />
-									<span class="guide">کاراکترهای مجاز: فقط حروف و اعداد انگلیسی.</span>
-								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="name">کلمه عبور *</label>
-								<div class="controls">
-									<input type="text" name="name" />
-									<span class="guide">کلمه عبور باید حداقل 6 کاراکتر باشد.</span>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<p class="pull-right">
-						<input type="checkbox" name="terms" />
-						تمامی <a href="#">قوانین و مقررات سایت</a> را مطالعه کرده و قبول دارم.
-					</p>
-					<a href="#" class="btn btn-primary pull-left">ثبت اطلاعات</a>
-				</div>
-			</div>
+			<?php include dirname(__file__) . '/blocks/modals.php'; ?>
 		</section>
 		<footer id="footer">
 			<div class="container">
