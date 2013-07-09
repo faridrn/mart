@@ -14,6 +14,22 @@ $(function() {
 		e.preventDefault();
 	});
 	
+	$("#login-link").popover({
+		html: true
+		, placement: 'bottom'
+		, content: $("#login-popover").html()
+	});
+	
+	$("#register-link").click(function(e) {
+		$("#register-modal").modal('toggle');
+		e.preventDefault();
+	});
+	
+	// $("#login-link").click(function(e) {
+		// $(this).popover('show');
+		// e.preventDefault();
+	// });
+	
 	function loadDetails(id) {
 		var d = false;
 		if (typeof(id) != "undefined" && id) {
