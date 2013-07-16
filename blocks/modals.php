@@ -56,14 +56,14 @@
 								<label class="control-label" for="name">نام کاربری *</label>
 								<div class="controls">
 									<input type="text" name="name" />
-									<span class="guide">کاراکترهای مجاز: فقط حروف و اعداد انگلیسی.</span>
+									<span class="guide help-inline">کاراکترهای مجاز: فقط حروف و اعداد انگلیسی.</span>
 								</div>
 							</div>
 							<div class="control-group">
 								<label class="control-label" for="name">کلمه عبور *</label>
 								<div class="controls">
 									<input type="text" name="name" />
-									<span class="guide">کلمه عبور باید حداقل 6 کاراکتر باشد.</span>
+									<span class="guide help-inline">کلمه عبور باید حداقل 6 کاراکتر باشد.</span>
 								</div>
 							</div>
 						</fieldset>
