@@ -2,16 +2,10 @@
 									<div class="greetings">
 										<i class="icon-user"></i>
 										<!--<span class="message">سلام</span>&nbsp;<span class="username">فرید</span>&nbsp;<a href="#" id="logout-link"><span>خروج</span></a>-->
-										<?php if (isset($_COOKIE['mart'])) { ?>
+										<?php if (isset($_COOKIE['mart-login'])) { ?>
 										خوش آمدید
-											<a href="#" id="profile"><?php echo $_COOKIE['mart']; ?></a>&nbsp;|&nbsp;
-											<form id="login-form" action="" method="post">
-												<fieldset>
-													<input type="hidden" name="username" value="<?php echo $_COOKIE['mart']; ?>" />
-													<input type="hidden" name="task" value="logout" />
-													<a href="#" id="logout-link"><span>خروج</span></a>
-												</fieldset>
-											</form>
+											<a href="#" id="profile"><?php echo $_COOKIE['mart-login']; ?></a>&nbsp;|&nbsp;
+											<a href="<?php echo $_SERVER['REQUEST_URI']; ?>?logout" id="logout-link"><span>خروج</span></a>
 										<?php } else { ?>
 										<a href="#" id="login-link" data-toggle="popover" title="ورود به سایت"><span>ورود به سایت</span></a>&nbsp;|&nbsp;
 										<a href="#" id="register-link"><span>کاربر جدید</span></a>

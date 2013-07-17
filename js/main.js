@@ -25,10 +25,11 @@ $(function() {
 		e.preventDefault();
 	});
 	
-	// $("#login-link").click(function(e) {
-		// $(this).popover('show');
-		// e.preventDefault();
-	// });
+	$("#login-link").click(function(e) {
+		if ($("#login-form").find("input[name=username]").val() == '') {
+			$("#login-form").find("input[name=username]").focus();
+		}
+	});
 	
 	function loadDetails(id) {
 		var d = false;
