@@ -117,17 +117,17 @@ h2, h3 { font-family: 'Droid Arabic Kufi', 'Times New Roman', Times, Arial, Taho
 .modal .modal-footer { direction: rtl; text-align: right;height: 45px; padding: 7px 15px 8px; }
 .modal .modal-footer h3 { margin: 7px 0; width: 150px; }
 /* Items Modal */
-#items-modal .item-image {}
-#items-modal .item-image:hover {}
-#items-modal .item-image img {}
-#items-modal .item-title { width: 480px; }
-#items-modal .item-oldprice span { text-decoration: line-through; }
-#items-modal .item-details { width: 480px; margin: 0; list-style: none; text-align: right; }
-#items-modal .item-details li { height: 22px; padding: 3px 0; border-bottom: 1px solid #ddd; }
-#items-modal .item-details li:last-child { border-bottom: 1px solid transparent; }
-#items-modal .item-details span { font-weight: bold; }
-#items-modal .options { padding-top: 10px; }
-#items-modal .options div { display: inline-block; padding-right: 20px; }
+#item-modal .item-image {}
+#item-modal .item-image:hover {}
+#item-modal .item-image img {}
+#item-modal .item-title { width: 480px; }
+#item-modal .item-oldprice span { text-decoration: line-through; }
+#item-modal .item-details { width: 480px; margin: 0; list-style: none; text-align: right; }
+#item-modal .item-details li { height: 22px; padding: 3px 0; border-bottom: 1px solid #ddd; }
+#item-modal .item-details li:last-child { border-bottom: 1px solid transparent; }
+#item-modal .item-details span { font-weight: bold; }
+#item-modal .options { padding-top: 10px; }
+#item-modal .options div { display: inline-block; padding-right: 20px; }
 /* Item Page */
 .item-title { font-family: 'Droid Arabic Kufi', 'Droid Arabic Naskh', 'Times New Roman', Times, Arial; }
 .item-info ul { width: 500px; margin: 0; list-style: none; }

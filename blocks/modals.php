@@ -1,4 +1,4 @@
-<div id="items-modal" class="modal hide fade">
+<div id="item-modal" class="modal hide fade">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					<h3>نام کالا</h3>
@@ -9,7 +9,7 @@
 					<h3>موارد مشابه</h3>
 				</div>
 			</div>
-			<div id="cart-modal" class="modal hdie fade">
+			<div id="cart-modal" class="modal hide fade">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					<h3>سبد خرید</h3>
