@@ -134,6 +134,7 @@
 		<script src="js/vendor/select2.min.js"></script>
 		<script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
 		<script src="js/vendor/jquery.zoom-min.js"></script>
+		<script src="js/vendor/jquery.avgrund.min.js"></script>
 		<script src="js/vendor/handlebars.js"></script>
 		<script src="js/main.js"></script>
 		<script id="items-tamplate" type="text/x-jquery-tmpl"></script>
