@@ -14,6 +14,12 @@ $(function() {
 		e.preventDefault();
 	});
 	
+	$checkboxes = $("input[name=check]");
+	$("#cart-modal").find("input.checkall").click(function() {
+		$checkboxes.prop("checked", !$checkboxes.prop("checked"));
+	});
+	
+	
 	$("#login-link").popover({
 		html: true
 		, placement: 'bottom'
@@ -95,6 +101,7 @@ $(function() {
 	loadItems();
 
 	$items.delegate(".item", 'click', function(e) {
+		prepareItemModal();
 		var output = '';
 		var $item = $(this);
 		var itemLink = $item.find('.details a:first').attr('href');
@@ -117,7 +124,7 @@ $(function() {
 					var output = detailsTemplate(d);
 					$("#items-modal").find(".modal-body").html(output);
 					$(".zoom").zoom({url: $(".zoom").find('img:first').attr('data-zoom-image')});
-					$("#items-modal").modal("show").find("#more-info a:first").attr('href', 'item.php?id=' + itemId);
+					$("#items-modal").find("#more-info a:first").attr('href', 'item.php?id=' + itemId);
 				},
 				error: function() {
 					alert('Error Loading Details!');
@@ -126,6 +133,12 @@ $(function() {
 		}
 		e.preventDefault();
 	});
+	
+	function prepareItemModal() {
+		$("#items-modal").find(".modal-header h3").text('');
+		$("#items-modal").find(".modal-body").html('');
+		$("#items-modal").modal("show");
+	}
 	
 	function createLargeImage(img) {
 		var parts = img.split('/');

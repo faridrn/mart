@@ -149,6 +149,14 @@ h2, h3 { font-family: 'Droid Arabic Kufi', 'Times New Roman', Times, Arial, Taho
 .related-items ul li > a { display: table-cell; vertical-align: middle; text-align: center; width: 100px; height: 100px; border: 1px solid #ddd; background: #fff; }
 .related-items ul li > a:hover { border: 1px solid #ababab; }
 .related-items ul li > a img { max-width: 100px; max-height: 100px; }
+/* Cart */
+#cart-modal .image-holder {  }
+#cart-modal .image-holder a { display: block; width: 100px; height: 100px; overflow: hidden; border: 2px solid #ddd; }
+#cart-modal .image-holder a:hover { border: 2px solid #ababab; }
+#cart-modal .image-holder img { width: 100px; height: auto; }
+#cart-modal h4 { font-family: 'Droid Arabic Naskh', 'Droid Arabic Kufi', 'Times New Roman', Times, Arial; }
+#cart-modal h4 a { color: #333 }
+#cart-modal .modal-footer { height: auto; }
 /* Footer */
 #footer .fixed { position: fixed; bottom: 0 }
 #footer .fixed .alert { margin: 0 }
