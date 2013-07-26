@@ -9,12 +9,6 @@ $(function() {
 	var dTemp = $("#details-template").html();
 	$(".zoom").zoom({url: $(".zoom").find('img:first').attr('data-zoom-image')});
 	$("body").on('hidden', '.modal', function () { $(this).removeData('modal'); });
-	$("#cart-link").click(function(e) {
-		cart.toggleModal(e);
-	});
-	
-	
-	
 	
 	/*function initAddCart() {
 		$("#add-cart, #add-cart a").click(function(e) {
@@ -41,8 +35,10 @@ $(function() {
 	});
 	
 	var cart = {
-		cartModal: $("#cart-modal"),
-		$checkboxes: this.cartModal.find("input[name=check]"),
+		init: function() {
+			this.cartModal = $("#cart-modal");
+			this.$checkboxes = this.cartModal.find("input[name=check]");
+		},
 		toggleModal: function(e) {
 			this.cartModal.modal('toggle');
 			this.handleCheckboxes();
@@ -52,9 +48,12 @@ $(function() {
 			this.cartModal.find("input.checkall").click(function() {
 				$checkboxes.prop("checked", !$checkboxes.prop("checked"));
 			});
-		}
-		
-	};
+		}		
+	}.init();
+	
+	$("#cart-link").click(function(e) {
+		cart.toggleModal(e);
+	});
 	
 	var items = {
 		loadList: function () {
@@ -155,8 +154,6 @@ $(function() {
 		items.prepareModal(e);
 		items.load($(this));
 	});
-	
-	
 	
 	$("#searchcategories").select2({
 		dropdownCssClass: 'bigdrop',
